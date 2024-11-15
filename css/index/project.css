@@ -1,0 +1,344 @@
+.main-project {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  height: min-content;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0 12px;
+  position: relative;
+  width: 100%;
+}
+.project-frame {
+  align-content: center;
+  align-items: center;
+  background-color: var(#f5f5f5);
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 48px;
+  height: min-content;
+  justify-content: center;
+  overflow: hidden;
+  padding: 60px 120px;
+  position: relative;
+  width: 100%;
+}
+.project-body {
+  flex: 1 0 0px;
+  height: auto;
+  max-width: 1300px;
+  position: relative;
+  width: 1px;
+}
+.project-list {
+  max-width: 100%;
+  width: 100%;
+  opacity: 1;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  height: min-content;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 1300px;
+}
+.project-one {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: 2 0 0px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 400px;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 48px 24px 24px;
+  position: relative;
+  width: 1px;
+  will-change: var(transform);
+  filter: grayscale(0);
+  border-radius: 36px;
+  transform: none;
+  transform-origin: 50% 50% 0px;
+  will-change: auto;
+  transition: ease 1.2s;
+}
+.p-img {
+  position: absolute;
+  border-radius: inherit;
+  inset: 0px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+}
+.project-list img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-position: center center;
+  object-fit: cover;
+  image-rendering: auto;
+  transition: filter 0.3s ease, width 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+/* 기본 채도 설정 */
+.project-two img,
+.project-thr img {
+  filter: saturate(0.5); /* 기본 채도 어둡게 */
+}
+
+/* Hover 시 채도 높이기 */
+.project-one:hover img,
+.project-two:hover img,
+.project-thr:hover img {
+  filter: saturate(1.5); /* 채도 높이기 */
+}
+
+/* .project-two, .project-thr Hover 시 .project-one 채도 낮추기 */
+.project-two:hover ~ .project-one img,
+.project-thr:hover ~ .project-one img {
+  filter: saturate(0.3); /* 더 어둡게 */
+}
+
+.project-two,
+.project-thr {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 400px;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 48px 24px 24px;
+  position: relative;
+  width: 1px;
+  will-change: var(transform);
+  filter: grayscale(0.8);
+  border-radius: 36px;
+  transform: none;
+  transform-origin: 50% 50% 0px;
+  will-change: auto;
+  transition: ease 1.2s;
+}
+
+.h1-p {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: 1 0 0px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 12px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 0;
+  position: relative;
+  width: 1px;
+  transform: none;
+  transform-origin: 50% 50% 0px;
+}
+.p-span-h4 {
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  /* color: rgb(255, 255, 255); */
+  /* text-decoration: underline; */
+  transform: none;
+  transform-origin: 50% 50% 0px;
+  flex: none;
+  height: auto;
+  position: relative;
+  white-space: pre;
+  width: auto;
+}
+.p-span {
+  display: flex;
+}
+.p-span-h4 > h4 {
+  font-weight: 700; /* 기본 폰트 두께 설정 (700은 볼드) */
+  font-size: 32px; /* 글자 크기 설정 */
+  line-height: 1.2em; /* 줄 간격 설정 */
+  letter-spacing: -0.01em; /* 글자 간격 약간 좁힘 */
+  text-align: start; /* 텍스트 정렬을 시작(왼쪽)으로 설정 */
+  color: #000000; /* 글자 색상 설정 (검정색) */
+  text-decoration: none; /* 텍스트에 밑줄, 취소선 등 장식 제거 */
+  text-transform: none; /* 텍스트 변형 없음 (대소문자 변환 안 함) */
+}
+.p-span-p {
+  outline: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: rgb(168, 176, 180);
+  transform: none;
+  transform-origin: 50% 50% 0px;
+  flex: none;
+  height: auto;
+  position: relative;
+  /* white-space: pre-wrap; */
+  width: 100%;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.p-span-p > p {
+  font-weight: 400; /* 기본 글꼴 두께 설정 (400은 일반 글꼴) */
+  font-size: 16px; /* 글자 크기 설정 */
+  line-height: 1.3em; /* 줄 간격 설정 */
+  letter-spacing: 0em; /* 글자 간격 기본값 */
+  text-align: left; /* 텍스트 왼쪽 정렬 */
+  color: rgba(13, 12, 12, 0.8); /* 글자 색상 설정 (투명도 0.8인 어두운 색) */
+  text-decoration: none; /* 텍스트에 밑줄, 취소선 등 장식 제거 */
+  text-transform: none; /* 텍스트 변형 없음 (대소문자 변환 안 함) */
+  margin: 0; /* p 태그의 기본 여백 제거 */
+  padding: 0; /* p 태그의 기본 패딩 제거 */
+}
+.swich {
+  transform: none;
+  transform-origin: 50% 50% 0px;
+  flex: none;
+  height: auto;
+  position: relative;
+  width: auto;
+  transition: ease 0.7s;
+}
+.swich a {
+  align-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 12px;
+  height: 60px;
+  justify-content: center;
+  overflow: visible;
+  padding: 0;
+  position: relative;
+  text-decoration: none;
+  width: 60px;
+  border-bottom-width: 0px;
+  border-color: rgba(255, 255, 255, 0.5);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-style: solid;
+  border-top-width: 0px;
+  backdrop-filter: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 100px;
+  transform: none;
+  transform-origin: 50% 50% 0px;
+}
+.swich-a {
+  transform: none;
+  transform-origin: 50% 50% 0px;
+  flex: none;
+  height: 25px;
+  position: relative;
+  width: 25px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+}
+.swich-a-div {
+  display: contents;
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+  border-bottom-width: 0px;
+  border-color: rgba(255, 255, 255, 0.5);
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-style: solid;
+  border-top-width: 0px;
+  backdrop-filter: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 100px;
+  transform: none;
+  transform-origin: 50% 50% 0px;
+  align-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 12px;
+  height: 60px;
+  justify-content: center;
+  overflow: visible;
+  padding: 0;
+  position: relative;
+  text-decoration: none;
+}
+.xi-arrow-right {
+  font-size: 20px;
+  transition: transform 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+.swich:hover .xi-arrow-right {
+  transform: translateX(3px); /* 오른쪽으로 3px 이동 */
+}
+.project-two .swich {
+  transform: translateX(100px);
+}
+.project-two:hover .swich {
+  transform: translateX(0);
+}
+
+.project-thr .swich {
+  transform: translateX(100px);
+}
+.project-thr:hover .swich {
+  transform: translateX(0);
+}
+.project-two:hover .project-one .switch {
+  transform: translateX(100px);
+}
+.project-project {
+  align-items: center;
+  justify-content: center;
+  padding-left: auto;
+  padding-right: auto;
+}
+.project-span {
+  flex: none;
+  height: auto;
+  position: relative;
+  white-space: pre-wrap;
+  width: 100%;
+  word-break: break-word;
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  transform: none;
+  margin-top: 130px;
+}
+.project-span > span {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: -0.32px;
+  line-height: 120%;
+  text-align: center;
+  color: #2e3238; /* 기본 텍스트 색상 */
+  text-decoration: none;
+  text-transform: none;
+  /* 스트로크 설정 */
+}

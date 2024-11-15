@@ -34,7 +34,7 @@
 .home span {
   color: #ff1749;
 }
-/* 모달 열릴 때 스타일 */
+/* 모달 닫힐 때 스타일 */
 .modal {
   position: fixed;
   top: 0;
@@ -45,13 +45,14 @@
   opacity: 0;
   visibility: hidden;
   z-index: 3;
-  transition: opacity 0.5s ease 1.2s, visibility 0s 1.7s; /* 닫힐 때 딜레이 추가 */
+  transition: opacity 0.3s ease 0.5s, visibility 0s 0.8s;
 }
 
+/* 모달 열릴 때 스타일 */
 .modal.active {
   opacity: 1;
   visibility: visible;
-  transition: opacity 0.5s ease, visibility 0s 0s;
+  transition: opacity 0.3s ease, visibility 0s 0s;
 }
 
 /* 모달 요소 나타나는 애니메이션 */

@@ -34,13 +34,15 @@
   width: 100%;
   left: 0;
 }
+
 .menu-title span {
   font-family: "Poppins", sans-serif;
-  font-size: 168.5px;
   font-weight: 700;
   line-height: 1em;
   color: rgb(30, 30, 30);
+  font-size: clamp(24px, 10vw, 168.5px); /* 화면 비율에 따라 폰트 사이즈 조정 */
 }
+
 .header-main video {
   cursor: auto;
   width: 100%;

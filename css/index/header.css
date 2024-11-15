@@ -33,15 +33,25 @@
   z-index: 4;
 }
 .logo {
-  width: 70px; /* logo의 너비를 50px로 고정 */
+  width: 70px; /* logo의 너비를 70px로 고정 */
   height: auto; /* 비율을 유지하도록 설정 */
+  background-size: cover; /* 박스 크기에 맞춰 백그라운드 이미지 비율 유지 */
 }
 
-/* 이미지 클래스 */
 .logo > a > img {
   width: 100%; /* 부모인 .logo의 너비에 맞게 이미지 크기 조정 */
   height: auto; /* 이미지 비율을 유지하며 높이 자동 조정 */
   object-fit: contain; /* 비율 유지하면서 부모 크기에 맞게 이미지가 맞춰짐 */
+}
+
+.logo:hover {
+  background-image: url("../images/logo.png"); /* 호버 시 변경할 배경 이미지 */
+  background-size: contain; /* 배경 이미지가 부모 크기에 맞게 조절되도록 설정 */
+  background-repeat: no-repeat; /* 반복 없이 배경 이미지 하나만 표시 */
+}
+
+.logo:hover > a > img {
+  opacity: 0; /* 호버 시 첫 번째 이미지 투명도 변경 */
 }
 .menu-icon {
   cursor: pointer;
