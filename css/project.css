@@ -1,0 +1,85 @@
+.project {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: 1 0 0px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 80px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0 64px;
+  position: sticky;
+  top: 0;
+  width: 1px;
+  will-change: transform;
+  z-index: 1;
+}
+
+.project-span-img {
+  gap: 80px;
+  padding: 100px 32px 60px;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 144px;
+  height: 800px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 100px 64px 60px;
+  position: relative;
+  width: min-content;
+}
+
+.project-span {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 0;
+  position: relative;
+  width: min-content;
+}
+
+.span {
+  align-content: flex-start;
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 48px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0;
+  position: relative;
+  width: auto;
+}
+
+/* 글자 색상과 가시성 보장 */
+.span h1 {
+  font-family: var(--framer-font-family, "Plus Jakarta Sans", sans-serif);
+  font-size: var(--framer-font-size, 50px);
+  font-style: var(--framer-font-style, normal);
+  font-weight: var(--framer-font-weight, 400);
+  letter-spacing: var(--framer-letter-spacing, -0.04em);
+  line-height: var(--framer-line-height, 120%);
+  color: var(--framer-text-color, #111922); /* 글자 색상 확인 */
+  text-decoration: var(--framer-text-decoration, none);
+  text-transform: var(--framer-text-transform, none);
+  z-index: 10; /* 글자가 다른 요소들 위로 오게 설정 */
+  visibility: visible; /* visibility 속성으로 숨김 방지 */
+  opacity: 1; /* 투명도 설정으로 텍스트 보이게 */
+}
