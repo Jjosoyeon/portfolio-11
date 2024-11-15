@@ -45,7 +45,7 @@
 }
 
 .logo:hover {
-  background-image: url("../images/logo.png"); /* 호버 시 변경할 배경 이미지 */
+  background-image: url(/images/logo.png);
   background-size: contain; /* 배경 이미지가 부모 크기에 맞게 조절되도록 설정 */
   background-repeat: no-repeat; /* 반복 없이 배경 이미지 하나만 표시 */
 }
